@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHP Function</title>
+    <link rel="stylesheet" href="css/infopage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav_header">
+      <a href="index.html" class="nav_logo">PHP</a>
+
+      <nav class="nav_body">
+        <a href="index.html">Home</a>
+        <a href="dataType.html">DataType</a>
+        <a href="operators.html">Operators</a>
+        <a style="color: black;" href="function.html">Function</a>
+        <a href="references.html">References</a>
+      </nav>
+    </header>
+
+    <div class="infopage-bodycontainer">
+      <div class="body-container">
+        <div class="div_header">
+          <h1>Function in PHP</h1>
+          <p>
+            Besides the built-in PHP functions, it is possible to create your
+            own functions.
+          </p>
+          <div>
+            <ul>
+              <li>
+                A function is a block of statements that can be used repeatedly
+                in a program.
+              </li>
+              <br>
+              <li>
+                A function will not execute automatically when a page loads.
+              </li>
+              <br>
+              <li>A function will be executed by a call to the function.</li>
+            </ul>
+          </div>
+        </div>
+        <br>
+
+        <div class="info_div">
+          <h2>Create a Function</h2>
+          <p>
+            A user-defined function declaration starts with the keyword
+            <code>function</code>, followed by the name of the function:
+          </p>
+          <p>
+            <strong>Note: </strong>A function name must start with a letter or
+            an underscore. Function names are NOT case-sensitive.
+          </p>
+          <p>
+            <strong>Tip: </strong>Give the function a name that reflects what
+            the function does!
+          </p>
+          <h2 style="text-align: center">⭣ Example ⭣</h2>
+          <!-- รูป code ตัวอย่าง -->
+          <img src="img\function\Create a Function.png" />
+        </div>
+
+        <div class="info_div">
+          <h2>Call a Function</h2>
+          <p>
+            To call the function, just write its name followed by parentheses
+            <code>()</code>:
+          </p>
+          <h2 style="text-align: center">⭣ Example ⭣</h2>
+          <!-- รูป code ตัวอย่าง -->
+          <img src="img\function\Call a Function.png" />
+          <p>
+            In our example, we create a function named <code>myMessage()</code>.
+          </p>
+          <p>
+            The opening curly brace <code>{</code> indicates the beginning of
+            the function code, and the closing curly brace
+            <code>}</code> indicates the end of the function.
+          </p>
+        </div>
+
+        <div class="info_div">
+          <h2>Function Arguments</h2>
+          <p>
+            Information can be passed to functions through arguments. An
+            argument is just like a variable.
+          </p>
+          <p>
+            Arguments are specified after the function name, inside the
+            parentheses. You can add as many arguments as you want, just
+            separate them with a comma.
+          </p>
+          <p>
+            The following example has a function with one argument
+            <code>($fname)</code>. When the <code>familyName()</code> function
+            is called,
+          </p>
+          <p>
+            we also pass along a name, e.g. <code>("Jani")</code>, and the name
+            is used inside the function, which outputs several different first
+            names, but an equal last name:
+          </p>
+
+          <h2 style="text-align: center">⭣ Example ⭣</h2>
+          <!-- รูป code ตัวอย่าง -->
+          <img src="img\function\Function Arguments.png" />
+
+          <p>
+            The following example has a function with two arguments
+            <code>($fname, $year)</code>:
+          </p>
+          <h2 style="text-align: center">⭣ Example ⭣</h2>
+          <!-- รูป code ตัวอย่าง -->
+          <img
+            style="width: 1200px"
+            src="img\function\Function Arguments follows.png"
+          />
+        </div>
+
+        <div class="info_div">
+          <h2>Default Argument Value</h2>
+          <p>
+            The following example shows how to use a default parameter. If we
+            call the function <code>setHeight()</code> without arguments it
+            takes the default value as argument:
+          </p>
+          <h2 style="text-align: center">⭣ Example ⭣</h2>
+          <!-- รูป code ตัวอย่าง -->
+          <img
+            style="width: 1200px"
+            src="img\function\Default Argument Value.png"
+          />
+        </div>
+
+        <div class="info_div">
+          <h2>Functions - Returning values</h2>
+          <p>
+            To let a function return a value, use the
+            <code>return</code> statement:
+          </p>
+          <h2 style="text-align: center">⭣ Example ⭣</h2>
+          <!-- รูป code ตัวอย่าง -->
+          <img style="width: 1200px" src="img\function\Returning values.png" />
+        </div>
+
+        <div class="info_div">
+          <h2>Passing Arguments by Reference</h2>
+          <p>
+            In PHP, arguments are usually passed by value, which means that a
+            copy of the value is used in the function
+          </p>
+          <p>
+            and the variable that was passed into the function cannot be
+            changed.
+          </p>
+          <p>
+            When a function argument is passed by reference, changes to the
+            argument also change the variable that was passed in.
+          </p>
+          <p>
+            To turn a function argument into a reference, the
+            <code>&</code> operator is used:
+          </p>
+          <h2 style="text-align: center">⭣ Example ⭣</h2>
+          <p>Use a pass-by-reference argument to update a variable:</p>
+          <!-- รูป code ตัวอย่าง -->
+          <img src="img\function\Passing Arguments by Reference.png" />
+        </div>
+
+        <div class="info_div">
+          <h2>Variable Number of Arguments</h2>
+          <p>
+            By using the <code>...</code> operator in front of the function
+            parameter, the function accepts an unknown number of arguments. This
+            is also called a variadic function.
+          </p>
+          <p>The variadic function argument becomes an array.</p>
+          <h2 style="text-align: center">⭣ Example ⭣</h2>
+          <p>A function that do not know how many arguments it will get:</p>
+          <!-- รูป code ตัวอย่าง -->
+          <img src="img\function\Variable Number of Arguments.png" />
+          <p>
+            You can only have one argument with variable length, and it has to
+            be the last argument.
+          </p>
+          <h2 style="text-align: center">⭣ Example ⭣</h2>
+          <p>The variadic argument must be the last argument:</p>
+          <!-- รูป code ตัวอย่าง -->
+          <img src="img\function\Variable Number of Arguments 2.png" />
+          <div>
+            <h1 style="text-align: center; color: red">! Warning !</h1>
+            <p style="text-align: center; color: red">
+              If the variadic argument is not the last argument, you will get an
+              error.
+            </p>
+            <h2 style="text-align: center">⭣ Example ⭣</h2>
+            <p style="text-align: center">
+              Having the ... operator on the first of two arguments, will raise
+              an error:
+            </p>
+            <!-- รูป code ตัวอย่าง -->
+            <img src="img\function\Warning.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-Bottom">
+        <p>
+          Copyright &copy;2024, Designed by
+          <span class="designer">Nuntapong Visasmongkolchai</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
